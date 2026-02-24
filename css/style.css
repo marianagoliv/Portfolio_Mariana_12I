@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #82c2e2;
+
+}
+
+h1 {
+    font-size: 90px;
+    color: #f9b233;
+    margin: 15px;
+    text-shadow: 2px 2px 0px #2a9bb2;
+    letter-spacing: 2px;
+    text-shadow: 1.5px 1.5px #d47c00;
+    padding: 0;
+}
+
+html {
+    font-size: max(1vw, 12px);
+}
+
+
+h2 {
+    width: 100%;
+    color: #f9b233;
+    font-size: large;
+    margin: 3rem 1rem 1rem 1rem;
+    text-shadow: 1.5px 1.5px #d47c00;
+
+}
+
+
+header {
+    background-color: #2a9bb2;
+
+    padding: 10px 60px;
+}
+
+nav ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ol li a,
+nav ol li button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Playfair Display", serif;
+}
+
+nav ol li a:hover,
+nav ol li button:hover {
+    color: #f9b233;
+}
+
+main {
+
+    padding: 40px 80px;
+}

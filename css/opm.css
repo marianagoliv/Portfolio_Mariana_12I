@@ -1,0 +1,164 @@
+html {
+    font-size: max(1vw, 11px);
+}
+
+
+#link-atual {
+    color: #fffda1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #82c2e2;
+    color: #000;
+}
+
+h1 {
+    color: #f9b233;
+    font-size: 40px;
+    margin-left: 60px;
+    margin-top: 40px;
+    text-shadow: 1.5px 1.5px #d47c00;
+}
+
+h2 {
+    color: #f9b233;
+    font-size: 40px;
+    margin-left: 60px;
+    margin-top: 40px;
+    text-shadow: 1.5px 1.5px #d47c00;
+}
+
+
+header {
+    background-color: #2a9bb2;
+
+    padding: 10px 60px;
+}
+
+main {
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.trabalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 100%;
+}
+
+.projeto {
+    background-color: white;
+    border: 0.2rem solid #000;
+    box-shadow: 8px 8px 0px #0b3042;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    max-height: 800px;
+
+
+}
+
+.titulo-projeto {
+    color: #f9b233;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.conteudo-projeto {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+
+.img-projeto img {
+    border: 2px solid #000;
+    background-color: #82c2e2;
+    box-shadow: 4px 4px 0px #0b3042;
+    transition: transform 0.3s ease;
+}
+
+.img-projeto img:hover {
+    transform: scale(1.03);
+}
+
+
+.texto-projeto p {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #003d5b;
+}
+
+@media (max-width: 1024px) {
+
+    main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .projeto {
+        max-width: 80%;
+        margin: 30px auto;
+        padding: 2rem;
+    }
+
+    .conteudo-projeto {
+        gap: 20px;
+    }
+
+    .img-projeto img {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .projeto {
+        max-width: 70%;
+        margin: 25px auto;
+        padding: 1.5rem;
+        box-shadow: 6px 6px 0px #0b3042;
+    }
+
+    .conteudo-projeto {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .img-projeto img {
+        width: 75%;
+        height: auto;
+    }
+
+    .texto-projeto p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,276 @@
+main {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ======== Títulos das Secções ======== */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 1.5px 1.5px #d47c00;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1.5px 1.5px #d47c00;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f9b233;
+    text-shadow: 1.5px 1.5px #d47c00;
+}
+
+/* ----------------Carrossel-de-textos------------- */
+
+section>img {
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #0b3042;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+section>div>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 70%;
+    scrollbar-width: thin;
+}
+
+section>div>ul li {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    background-color: #fff;
+    border: 2px solid #222;
+    box-shadow: 8px 8px 0 #003d5b;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 280px;
+    height: 400px;
+
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section>div>ul li:hover {
+    transform: scale(1.05);
+}
+
+/* ---- Imagens sem deformação ---- */
+section>div>ul li img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+
+    object-fit: contain;
+
+    border-radius: 6px;
+    background-color: #f9b233;
+}
+
+section>div>ul li p {
+    color: #f58220;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+section>div>ul::-webkit-scrollbar {
+    height: 8px;
+}
+
+section>div>ul::-webkit-scrollbar-thumb {
+    background-color: #f58220;
+    border-radius: 10px;
+}
+
+.img-projeto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.img-projeto .imagem {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 6px 6px 0 #0b3042;
+    border: 2px solid #222;
+    transition: transform 0.3s ease;
+}
+
+.img-projeto .imagem:hover {
+    transform: scale(1.05);
+}
+
+.texto-projeto {
+    color: #003d5b;
+}
+
+.projeto {
+    padding: 3rem;
+}
+
+.trabalho {
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #0b3042;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.carrossel-portugues div {
+    width: 95vw;
+}
+
+
+@media (max-width: 1024px) {
+
+    main {
+        padding: 2rem;
+    }
+
+    .carrossel ul {
+        gap: 1rem;
+    }
+
+    .conteudo-projeto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-projeto {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    .carrossel ul li {
+        width: 220px;
+        height: 320px;
+    }
+
+    .img-projeto img {
+        width: 220px;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 430px) {
+
+
+
+    main {
+        padding: 0.8rem;
+        gap: 1rem;
+    }
+
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .carrossel-portugues>div {
+        padding: 5px 0;
+    }
+
+    .carrossel-portugues ul {
+        gap: 0.7rem;
+        padding: 6px;
+    }
+
+    .carrossel-portugues li {
+        width: 160px;
+        height: 240px;
+    }
+
+    .carrossel-portugues img {
+        max-width: 160px;
+    }
+
+
+    .trabalho {
+        padding: 0.8rem;
+    }
+
+    .conteudo-projeto {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .img-projeto {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .img-projeto img {
+        width: 160px !important;
+    }
+
+    .texto-projeto {
+        font-size: 0.85rem;
+    }
+
+    blockquote {
+        font-size: 0.85rem;
+        padding: 0.3rem;
+    }
+
+
+    section>div>ul li {
+        width: 160px;
+        height: 240px;
+    }
+}

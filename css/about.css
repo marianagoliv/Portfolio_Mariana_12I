@@ -1,0 +1,236 @@
+/* font-family: "Playfair Display", serif; */
+
+
+
+section>.texto-eu,
+section>.img-box section>div {
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #0b3042;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* ---------------- SOBRE MIM ---------------- */
+section img {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+section p {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.7rem;
+    font-family: "Playfair Display", serif;
+
+}
+
+/* ---------------- INFO PESSOAL ---------------- */
+
+.sobre-mim {
+    background-color: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 4rem;
+
+}
+
+.img-box {
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
+.img-card {
+
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.img-card img {
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #0b3042;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+}
+
+.img-card p {
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #0b3042;
+}
+
+
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 450px;
+    width: 100%;
+}
+
+
+.texto-eu {
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #0b3042;
+    padding: 3rem;
+    width: 100%;
+}
+
+p {
+    padding: 1rem;
+
+}
+
+ol ul {
+    list-style: none;
+    font-size: 15px;
+    padding: 0;
+    margin-top: 1.5rem;
+    color: #0b3042;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+
+}
+
+/*--------------------CARROSSEL-------------------- */
+.carrossel>div {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+    white-space: nowrap;
+
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 10px 12px;
+}
+
+
+.carrossel ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 12px;
+    margin: 0;
+    list-style: none;
+}
+
+
+.carrossel li {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+
+}
+
+.carrossel img {
+    display: block;
+    max-width: 200px;
+
+    height: auto;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0px #0b3042;
+    transition: transform .25s ease;
+    scroll-snap-align: start;
+}
+
+
+.carrossel img:hover {
+    transform: scale(1.05);
+}
+
+
+.carrossel>div {
+    scroll-snap-type: x mandatory;
+}
+
+
+/* ---------------- TEXTO FINAL ---------------- */
+section p {
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: #0b3042;
+    font-family: "Playfair Display", serif;
+}
+
+section .texto {
+
+    width: 65vw;
+
+}
+
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 60px;
+        margin: 40px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    .carousel img {
+        max-width: 150px;
+    }
+
+    .carousel ul {
+        gap: 10px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .sobre-mim {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .texto {
+        max-width: 250px;
+    }
+
+    .img-box,
+    .texto {
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .sobre-mim {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section .texto {
+        max-width: 30%;
+        max-width: 100px;
+
+
+    }
+
+}

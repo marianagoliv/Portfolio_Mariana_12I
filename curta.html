@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Curta de animação</title>
+    <link rel="stylesheet" href="./css/curta.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/popover.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=IM+Fell+Great+Primer+SC&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="index.html">index</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="popover-container">
+                    <button id="menu1-btn" popovertarget="menu1" popovertargetaction="toggle">Galeria</button>
+                    <div id="menu1" popover="auto" anchor="menu1-btn">
+                        <ul>
+                            <li><a href="portugues.html">Português</a></li>
+                            <li><a href="opm.html" id="link-atual">OPM</a></li>
+                            <li><a href="curta.html">Curta Metragem</a></li>
+                            <li><a href="ma3d.html">MA3D</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Curta Metragem de animação</h1>
+        <h2>Processo</h2>
+        <section>
+            <div class="processo">
+                <ul class="carrossel">
+                    <li>
+                        <img src="./data/Blackout_page-0001.jpg" alt="" width="400px">
+                        <p>Argumento</p>
+                    </li>
+                    <li>
+                        <img src="./data/guiao.jpg" alt="" width="400px">
+                        <p>Guião - primeira página </p>
+                    </li>
+                    <li>
+                        <img src="./data/guiao-2.jpg" alt="" width="400px">
+                        <p> Guião - segunda página</p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <p>
+                    Desenvolvido por: Mariana Oliveira, Jasmim Vieira, Simão Lopes, Isadora Ieda e Duarte Marques.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>
+                Produto Final
+            </h2>
+            <div> <video src="./data/Black_Out_Curta_metragem.mp4" controls width="500px"></video></div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+</body>
+
+</html>
